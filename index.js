@@ -16,7 +16,7 @@ btn.addEventListener('click', fetchDetails);
         if (this.status === 200) {
             let json = JSON.parse(this.responseText);
             let surpriseHtml = "";
-            let surprise = `<div class="card bg-primary" style="width: 18rem;">
+            let surprise = `<div class="card bg-primary">
             <img src="${json.urlImage}" class="card-img-top" alt="picture">
             <div class="card-body">
                 <h5 class="card-title text-light">${json.start}</h5>
